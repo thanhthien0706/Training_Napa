@@ -78,3 +78,51 @@ Trả lời:
     <img  src='../image/const-1.png' width='300px' height='200px' style="text-align:center" />
 -	Đối với kiểu dữ liệu reference (Object, array, function): Chúng ta cũng không thể cập nhật hoặc tái khai báo biến. Tuy nhiên chúng ta có thể cập nhật giá trị cho thuộc tính của biến đó.<br />
     <img  src='../image/const-2.png' width='300px' height='200px' style="text-align:center" />
+
+<b>Câu 6: Sự khác nhau giữa forEach, filter, map, every, some, reduce, for thường?</b><br />
+Trả lời:
+
+-	forEach: 
+    +	Công dụng: Thực thi một hàm trong mỗi phần tử của mảng. 
+    +	Hàm đó có 3 tham số là: 
+        ●	phần tử hiện tại trong mảng (element).
+        ●	Chỉ số của phần tử đó trong mảng(index).
+        ●	Mảng hiện tại chứa phần tử đó (array).
+    +	Giá trị trả về: undefined.
+    +	Không làm thay đổi mảng mà forEach được gọi.
+-	filter:
+    +	Công dụng: tạo ra một mảng mới gồm các phần tử đã vượt qua điều kiện trả về true, bỏ qua các phần tử trả về false.
+    +	Hàm callback trong filter dùng để kiểm tra phần tử của mảng. Hàm gồm 3 tham số giống như forEach.
+    +	Giá trị trả về: Trả về một mảng mới có chứa các phần tử đã vượt qua điều kiện trong hàm callback. Nếu không có phần tử nào vượt qua thì trả về mảng rỗng.
+-	Map:
+    +	Công dụng: Tạo ra một mảng mới từ giá trị trả về của vòng lặp. Sử dụng khi muốn chuyển đổi các phần tử trong mảng.
+    +	Hàm callback được truyền vào map có nhiệm vụ thực thi và trả về giá trị và sẽ được thêm vào mảng mới.Hàm cũng có 3 tham số như forEach.
+    +	Giá trị trả về: một mảng mới với mỗi phần tử là kết quả trả về của hàm callback.
+-	Every:
+    +	Công dụng: kiểm tra xem tất cả phần tử của mảng có thỏa mãn điều kiện nào đó không.
+    +	Hàm callback có chức năng là kiểm tra điều kiện cho mỗi phần tử. Hàm có 3 tham số như forEach.
+    +	Giá trị trả về: 
+        ●	Trả về True, nếu tất cả các phần tử của mảng cùng thỏa mãn điều kiện. Ngược lại trả về False.
+-	Some:
+    +	Công dụng: Kiểm tra xem có ít nhất một phần tử trong mảng thỏa mãn điều kiện hay không.
+    +	Hàm callback có chức năng và tham số tương tự như every.
+    +	Giá trị trả về: 
+        ●	Trả về true, nếu có ít nhất một phần tử thỏa mãn điều kiện.
+        ●	Ngược lại trả về False.
+-	Reduce:
+    +	 Công dụng: Lấy ra một giá trị cuối cùng từ nhiều phần tử trong mảng.
+    +	Hàm reduce có 2 thành phần : callback và giá trị khởi tạo (initialvalue).
+    +	Hàm callback được truyền vào reduce có 4 tham số:
+        ●	previousValue: giá trị kết quả của callback trước đó. Nếu là lần đầu tiên thì sẽ lấy giá trị khởi tạo, nếu không thì lấy giá trị của phần tử đấu tiền của mảng (arr[0]).
+        ●	currentValue: Giá trị của phần tử hiện tại. Trong lần chạy đầu tiên , lấy giá trị của array[0] nếu initialValue có giá trị, nếu không lấy giá trị của array[1].
+        ●	currentIndex: vị trí của currentValue trong mảng. Trong lần gọi đầu tiên, là 0 nếu có initialValue, ngược lại là 1.
+        ●	array: mảng được duyệt qua.
+    +	Giá trị trả về: Một kết quả duy nhất.
+-	For thường: 
+    +	Công dụng: Thực thi khối mã với số lần được chỉ định.
+    +	Các thành phần: 
+        ●	initialization: giá trị khởi tạo được sử dụng lần đầu khi vòng lặp bắt đầu.
+        ●	Condition: điều kiện lặp.
+        ●	afterthought: một biểu thức thực hiện sau mỗi vòng lặp. Được sử dụng trước khi xét condition. thường dùng để tăng initialization.
+    +	Giá trị trả về: undefined.
+
