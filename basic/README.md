@@ -37,23 +37,16 @@ Trả lời:
             - Để sử dụng promise khi kết quả trả về:
                 - .then(): khi promise trả về resolve.
                 - .catch(): khi promise trả về reject.
-                - .finally(): được thực hiện dù có resolve hay reject.
-<p align="center">
-    <img  src='../image/promise.png' width='300px' height='200px' style="text-align:center" />
-</p>
+                - .finally(): được thực hiện dù có resolve hay reject. <br /><img  src='../image/promise.png' width='300px' height='200px' style="text-align:center" />
     - Async / Await: 
         - Giúp cho cú pháp promise không dễ mình hơn, giống với quá trình đồng bộ và tránh tình trạng chain .then().
         - Đặt async trước function để thông báo, đây là hàm xử lý bất đồng bộ.
         - Await được dừng để báo muốn đợi kết quả của công việc bất động bộ. Await phải được dừng trong hàm có đánh dấu từ khóa async.
-        - Sử dụng try/catch để bắt lỗi xảy ra trong async/await.
-<p align="center">
+        - Sử dụng try/catch để bắt lỗi xảy ra trong async/await.<br />
     <img  src='../image/async_await.png' width='300px' height='200px' style="text-align:center" />
-</p>
 
-<!-- <b>Câu 3: Callback hell là gì</b>
+<b>Câu 3: Callback hell là gì</b>
 Trả lời:
-    - Để xử lý các tác vụ bất động động ta có thể sử dụng callback. Nhưng khi lạm dụng quá nhiều callback lồng nhau sẽ sinh ra callback hell.
-<p align="center">
+    - Để xử lý các tác vụ bất động động ta có thể sử dụng callback. Nhưng khi lạm dụng quá nhiều callback lồng nhau sẽ sinh ra callback hell.<br />
     <img  src='../image/callback-hell.png' width='300px' height='200px' style="text-align:center" />
-</p>
-    - callback-hell -->
+    - callback-hell
