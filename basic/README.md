@@ -44,7 +44,6 @@ Trả lời:
         - Await được dừng để báo muốn đợi kết quả của công việc bất động bộ. Await phải được dừng trong hàm có đánh dấu từ khóa async.
         - Sử dụng try/catch để bắt lỗi xảy ra trong async/await.<br />
     <img  src='../image/async_await.png' width='300px' height='200px' style="text-align:center" />
-
 <b>Câu 3: Callback hell là gì</b>
 Trả lời:
     - Để xử lý các tác vụ bất động động ta có thể sử dụng callback. Nhưng khi lạm dụng quá nhiều callback lồng nhau sẽ sinh ra callback hell.<br />
