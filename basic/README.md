@@ -225,7 +225,7 @@ Trả lời:
         -	Cả 2 phương thức này trông rất giống nhau, tuy nhiên sự khác biệt nằm ở arguments truyền vào chúng.
         -	Call cho phép truyền từng arguments một (one by one).
         -	apply thì cho phép truyền vào một mảng.
-    <img  src='../image/bind_1.png' width='300px' height='200px' style="text-align:center" />
+    <img  src='../image/bind_1.png' width='300px' height='200px' style="text-align:center" /><br />
     +	bind: cho phép chúng ta đặt this một lần, và chúng ta có thể hàm đã được bind ở bất kỳ đâu khi muốn sử dụng.
     <img  src='../image/bind_2.png' width='300px' height='200px' style="text-align:center" />
 
