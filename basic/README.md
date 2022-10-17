@@ -19,3 +19,8 @@ Trả lời:
 Trả lời:
 -   Giống nhau: 
     +   Đều có chức năng là xử lý các bất động bộ.
+-	Khác nhau:
+    +	Callback: 
+        .	Là một hàm được truyền dưới dạng tham số vào hàm khác, và được gọi trong hàm đó.
+        .	Cách dùng:
+![image info](../image/callback.png)
