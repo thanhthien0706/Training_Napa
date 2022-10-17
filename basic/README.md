@@ -26,31 +26,31 @@ Trả lời:
 <p align="center">
     <img  src='../image/callback.png' width='300px' height='200px' style="text-align:center" />
 </p>
-    +   Promise:
-        .	Xuất hiện từ ES6, promise giải quyết vấn đề của callback hell.
-        .	Promise đại diện cho một giá trị nào đó chưa tồn tại ở hiện tại nhưng sẽ có giá trị ở tương lai. Giúp xử lý các bất đồng bộ trông đồng bộ hơn.
-        .	truyền vào promise một hàm callback và  nhận 2 tham số dạng hàm là resolve, reject.
-        .	Nếu thực hiện công việc thành công hàm resolve được goi. Ngược lại, thất bại hàm reject được gọi.
-        .	Promise có 3 trạng thái:
-            .	Pending: quá trình thực hiện công việc bất đồng bộ đang được xử lý, chưa có kết quả.
-            .	Fulfilled: quá trình thực hiện hoàn thành vào trả về giá trị.
-            .	Rejected: quá trình thực hiện bị lỗi. kết quả là một đối tượng error.
-        .	Để sử dụng promise khi kết quả trả về:
-            .	.then(): khi promise trả về resolve.
-            .	.catch(): khi promise trả về reject.
-            .	.finally(): được thực hiện dù có resolve hay reject.
+    +   Promise:<br />
+        .	Xuất hiện từ ES6, promise giải quyết vấn đề của callback hell.<br />
+        .	Promise đại diện cho một giá trị nào đó chưa tồn tại ở hiện tại nhưng sẽ có giá trị ở tương lai. Giúp xử lý các bất đồng bộ trông đồng bộ hơn.<br />
+        .	truyền vào promise một hàm callback và  nhận 2 tham số dạng hàm là resolve, reject.<br />
+        .	Nếu thực hiện công việc thành công hàm resolve được goi. Ngược lại, thất bại hàm reject được gọi.<br />
+        .	Promise có 3 trạng thái:<br />
+            .	Pending: quá trình thực hiện công việc bất đồng bộ đang được xử lý, chưa có kết quả.<br />
+            .	Fulfilled: quá trình thực hiện hoàn thành vào trả về giá trị.<br />
+            .	Rejected: quá trình thực hiện bị lỗi. kết quả là một đối tượng error.<br />
+        .	Để sử dụng promise khi kết quả trả về:<br />
+            .	.then(): khi promise trả về resolve.<br />
+            .	.catch(): khi promise trả về reject.<br />
+            .	.finally(): được thực hiện dù có resolve hay reject.<br />
 <p align="center">
     <img  src='../image/promise.png' width='300px' height='200px' style="text-align:center" />
 </p>
-    +	Async / Await: 
-        .	Giúp cho cú pháp promise không dễ mình hơn, giống với quá trình đồng bộ và tránh tình trạng chain .then().
-        .	Đặt async trước function để thông báo, đây là hàm xử lý bất đồng bộ.
-        .	Await được dừng để báo muốn đợi kết quả của công việc bất động bộ. Await phải được dừng trong hàm có đánh dấu từ khóa async.
-        .	Sử dụng try/catch để bắt lỗi xảy ra trong async/await.
+    +	Async / Await: <br />
+        .	Giúp cho cú pháp promise không dễ mình hơn, giống với quá trình đồng bộ và tránh tình trạng chain .then().<br />
+        .	Đặt async trước function để thông báo, đây là hàm xử lý bất đồng bộ.<br />
+        .	Await được dừng để báo muốn đợi kết quả của công việc bất động bộ. Await phải được dừng trong hàm có đánh dấu từ khóa async.<br />
+        .	Sử dụng try/catch để bắt lỗi xảy ra trong async/await.<br />
 <p align="center">
     <img  src='../image/async_await.png' width='300px' height='200px' style="text-align:center" />
 </p>
 
 <b>Câu 3: Callback hell là gì</b>
-Trả lời:
-    -	Để xử lý các tác vụ bất động động ta có thể sử dụng callback. Nhưng khi lạm dụng quá nhiều callback lồng nhau sẽ sinh ra callback hell.
+Trả lời:<br />
+    -	Để xử lý các tác vụ bất động động ta có thể sử dụng callback. Nhưng khi lạm dụng quá nhiều callback lồng nhau sẽ sinh ra callback hell.<br />
