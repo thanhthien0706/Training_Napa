@@ -9,25 +9,23 @@ Trả lời:
   - Hai hàm này không phải là một phần của javascript. Nhưng các môi trường chạy Javascript đều có bộ lập lịch nội nên cung cấp các hàm này.
 - Khác nhau:
 
-|     | setTimeout | setInterval |
-| :-- | :--------- | :---------- |
-| Cú pháp | setTimeout( function , timeout) | setTimeout( function , timeout) |
+|           | setTimeout                                                                                                                                                                                                                                  | setInterval                                                                                                                                                                                                                                 |
+| :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Cú pháp   | setTimeout( function , timeout)                                                                                                                                                                                                             | setTimeout( function , timeout)                                                                                                                                                                                                             |
 | Công dụng | Công dụng Thực hiện một công việc (function) một lần sau một khoảng thời gian (timeout). Thực hiện một công việc (function) lặp đi lặp lại, sau một khoảng thời gian (interval) và lặp lại liên tục công việc đó trong khoảng thời gian đó. | Công dụng Thực hiện một công việc (function) một lần sau một khoảng thời gian (timeout). Thực hiện một công việc (function) lặp đi lặp lại, sau một khoảng thời gian (interval) và lặp lại liên tục công việc đó trong khoảng thời gian đó. |
-| Dừng hàm | let timerId = setTimeout(...);<br />clearTimeout( timerId ); | let timerId = setInterval(...);<br />clearInterval( timerId ); |
+| Dừng hàm  | let timerId = setTimeout(...);<br />clearTimeout( timerId );                                                                                                                                                                                | let timerId = setInterval(...);<br />clearInterval( timerId );                                                                                                                                                                              |
 
 <b>Câu 2: Phân biệt callback, promise, async await</b>
 Trả lời:
--   Giống nhau: 
-    +   Đều có chức năng là xử lý các bất động bộ.
--	Khác nhau:
-    +	Callback: 
-        -	Là một hàm được truyền dưới dạng tham số vào hàm khác, và được gọi trong hàm đó.<br />
-        -	Cách dùng:
+
+- Giống nhau:
+  - Đều có chức năng là xử lý các bất động bộ.
+- Khác nhau: + Callback: - Là một hàm được truyền dưới dạng tham số vào hàm khác, và được gọi trong hàm đó.<br /> - Cách dùng:
 <p align="center">
     <img  src='../image/callback.png' width='300px' height='200px' style="text-align:center" />
 </p>
     +   Promise:
-        -	Xuất hiện từ ES6, promise giải quyết vấn đề của callback hell.
+        -   Xuất hiện từ ES6, promise giải quyết vấn đề của callback hell.
         -	Promise đại diện cho một giá trị nào đó chưa tồn tại ở hiện tại nhưng sẽ có giá trị ở tương lai. Giúp xử lý các bất đồng bộ trông đồng bộ hơn.
         -	truyền vào promise một hàm callback và  nhận 2 tham số dạng hàm là resolve, reject.
         -	Nếu thực hiện công việc thành công hàm resolve được goi. Ngược lại, thất bại hàm reject được gọi.
@@ -53,4 +51,9 @@ Trả lời:
 
 <b>Câu 3: Callback hell là gì</b>
 Trả lời:
+
     -	Để xử lý các tác vụ bất động động ta có thể sử dụng callback. Nhưng khi lạm dụng quá nhiều callback lồng nhau sẽ sinh ra callback hell.
+
+<p align="center">
+    <img  src='../image/callback-hell.png' width='300px' height='200px' style="text-align:center" />
+</p>
