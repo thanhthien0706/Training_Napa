@@ -169,9 +169,29 @@ Trả lời:
 Trả lời:
 
 - Sử dụng Object.keys():
-  - Truyền object vào Object.keys => truy cập thuộc tính .length() => nếu bằng 0 thì object đó empty.< br />
+  - Truyền object vào Object.keys => truy cập thuộc tính .length() => nếu bằng 0 thì object đó empty.
     <img  src='../image/object_empty.png' width='300px' height='200px' style="text-align:center" />
 - Sử dụng for..in:
   - Dùng for…in để lặp các thuộc tính của đối tượng.
-  - Nếu không có vòng lặp nào thì object đó rỗng.< br />
+  - Nếu không có vòng lặp nào thì object đó rỗng.
     <img  src='../image/forInEmpty.png' width='300px' height='200px' style="text-align:center" />
+
+<b>Câu 11: Các phương thức để nối 2 mảng?</b><br />
+Trả lời:
+
+-	Sử dụng vòng lặp for và push:
+    +	ta sẽ lặp tất cả các phần tử của một mảng.
+    +	Trong vòng lặp ta lấy từng phần tử rồi push nó vào mảng còn lại.
+    <img  src='../image/noi_1.png' width='300px' height='200px' style="text-align:center" />
+-	Sử dụng spread:
+    +	Ta tạo một mảng mới, rồi rải các phần tử của 2 mảng đã cho bằng spread vào mảng mới tạo.
+    <img  src='../image/noi_2.png' width='300px' height='200px' style="text-align:center" />
+-	Sử dụng phương thức concat():
+    +	Gộp nhiều mảng lại với nhau thành một mảng khác mà vẫn giữ nguyên các mảng ban đầu.
+    <img  src='../image/noi_3.png' width='300px' height='200px' style="text-align:center" />
+-	Sử dụng spread và push:
+    +	Ta sử dụng tính năng thêm phần tử vào mảng của push và tính năng rải phần tử của spread để thực hiện nối mảng
+    <img  src='../image/noi_4.png' width='300px' height='200px' style="text-align:center" />
+-	Sử dụng reduce và push:
+    +	Cũng tương tự như dùng for và push.
+    <img  src='../image/noi_5.png' width='300px' height='200px' style="text-align:center" />
