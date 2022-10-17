@@ -46,6 +46,12 @@ Trả lời:
     <img  src='../image/async_await.png' width='300px' height='200px' style="text-align:center" />
 <b>Câu 3: Callback hell là gì</b>
 Trả lời:
-    - Để xử lý các tác vụ bất động động ta có thể sử dụng callback. Nhưng khi lạm dụng quá nhiều callback lồng nhau sẽ sinh ra callback hell.<br />
+
+- Để xử lý các tác vụ bất động động ta có thể sử dụng callback. Nhưng khi lạm dụng quá nhiều callback lồng nhau sẽ sinh ra callback hell.<br />
     <img  src='../image/callback-hell.png' width='300px' height='200px' style="text-align:center" />
-    - callback-hell
+- Callback hell gây ra sự khó chịu khi code và fix code.
+- Cách cải thiện:
+    - Sử dụng promise của ES6.
+    - Sử dụng Async/Await.
+    - Chia chức năng thành chức năng nhỏ hơn.
+    - Viết comment cho mỗi callback.
