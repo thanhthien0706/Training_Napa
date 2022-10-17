@@ -72,4 +72,9 @@ Trả lời:
     +	Let có tính hoisting tuy nhiên let không có giá trị khởi tạo nào do đó khi dùng biến let trước khi khởi tạo sẽ có lỗi là “ Reference Error ”.
     +	Được dùng trong trường hợp biến đó có thể gán lại giá trị.<br />
     <img  src='../image/let.png' width='300px' height='200px' style="text-align:center" />
-
+-	Const:
+    +	Tương tự như let, const có scope là block scoped và có tính hoisting nhưng không có giá trị khởi tạo.
+    +	Đối với các kiểu dữ liệu nguyên thủy (primitive), const không cho tái khai báo hoặc cập nhất giá trị mới cho biến đó.<br />
+    <img  src='../image/const-1.png' width='300px' height='200px' style="text-align:center" />
+-	Đối với kiểu dữ liệu reference (Object, array, function): Chúng ta cũng không thể cập nhật hoặc tái khai báo biến. Tuy nhiên chúng ta có thể cập nhật giá trị cho thuộc tính của biến đó.<br />
+    <img  src='../image/const-2.png' width='300px' height='200px' style="text-align:center" />
