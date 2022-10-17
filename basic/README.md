@@ -23,9 +23,8 @@ Trả lời:
 - Khác nhau: 
     - Callback: 
         - Là một hàm được truyền dưới dạng tham số vào hàm khác, và được gọi trong hàm đó.<br /> 
-        - Cách dùng:<br /><p align="center">
+        - Cách dùng:<br />
             <img  src='../image/callback.png' width='300px' height='200px' style="text-align:center" />
-        </p>
         - Promise:
             - Xuất hiện từ ES6, promise giải quyết vấn đề của callback hell.
             - Promise đại diện cho một giá trị nào đó chưa tồn tại ở hiện tại nhưng sẽ có giá trị ở tương lai. Giúp xử lý các bất đồng bộ trông đồng bộ hơn.
