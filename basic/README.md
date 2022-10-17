@@ -126,3 +126,16 @@ Trả lời:
         ●	afterthought: một biểu thức thực hiện sau mỗi vòng lặp. Được sử dụng trước khi xét condition. thường dùng để tăng initialization.
     +	Giá trị trả về: undefined.
 
+<b>Câu 7: Các phương pháp clone object?</b><br />
+Trả lời:
+
+-	Sử dụng Spread:<br />
+    <img  src='../image/spread.png' width='300px' height='200px' style="text-align:center" />
+-	Sử dụng Object.assign:<br />
+    <img  src='../image/assign.png' width='300px' height='200px' style="text-align:center" />
+-	Sử dụng JSON: sử dụng 2 phương trước parse() và stringify(). Tuy nhiên không thể clone nếu object có function<br />
+    <img  src='../image/json.png' width='300px' height='200px' style="text-align:center" />
+-	Sử dụng thư viện - Lodash:<br />
+    <img  src='../image/lodash.png' width='300px' height='200px' style="text-align:center" />
+-	Sử dụng thử nghiệm structuredClone:<br />
+    <img  src='../image/clone-struc.png' width='300px' height='200px' style="text-align:center" />
