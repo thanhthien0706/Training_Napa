@@ -23,4 +23,4 @@ Trả lời:
     +	Callback: 
         .	Là một hàm được truyền dưới dạng tham số vào hàm khác, và được gọi trong hàm đó.
         .	Cách dùng:
-![image info](../image/callback.png)
+![image info](../image/callback.png) { width: 100px; height: 100px ; text-align: center;}
