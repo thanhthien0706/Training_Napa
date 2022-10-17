@@ -50,3 +50,5 @@ Trả lời:
 <p align="center">
     <img  src='../image/async_await.png' width='300px' height='200px' style="text-align:center" />
 </p>
+
+<b>Câu 3: Callback hell là gì</b>
