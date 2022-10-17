@@ -24,7 +24,7 @@ Trả lời:
   - Callback:
     - Là một hàm được truyền dưới dạng tham số vào hàm khác, và được gọi trong hàm đó.<br />
     - Cách dùng:<br />
-      <img  src='../image/callback.png' width='300px' height='200px' style="text-align:center" />
+      <br /><img  src='../image/callback.png' width='300px' height='200px' style="text-align:center" />
     - Promise:
       - Xuất hiện từ ES6, promise giải quyết vấn đề của callback hell.
       - Promise đại diện cho một giá trị nào đó chưa tồn tại ở hiện tại nhưng sẽ có giá trị ở tương lai. Giúp xử lý các bất đồng bộ trông đồng bộ hơn.
@@ -37,15 +37,15 @@ Trả lời:
       - Để sử dụng promise khi kết quả trả về:
         - .then(): khi promise trả về resolve.
         - .catch(): khi promise trả về reject.
-        - .finally(): được thực hiện dù có resolve hay reject. <br /><img  src='../image/promise.png' width='300px' height='200px' style="text-align:center" />
+        - .finally(): được thực hiện dù có resolve hay reject. <br /><br /><img  src='../image/promise.png' width='300px' height='200px' style="text-align:center" />
   - Async / Await: - Giúp cho cú pháp promise không dễ mình hơn, giống với quá trình đồng bộ và tránh tình trạng chain .then(). - Đặt async trước function để thông báo, đây là hàm xử lý bất đồng bộ. - Await được dừng để báo muốn đợi kết quả của công việc bất động bộ. Await phải được dừng trong hàm có đánh dấu từ khóa async. - Sử dụng try/catch để bắt lỗi xảy ra trong async/await.<br />
-    <img  src='../image/async_await.png' width='300px' height='200px' style="text-align:center" />
+    <br /><img  src='../image/async_await.png' width='300px' height='200px' style="text-align:center" />
 
 <b>Câu 3: Callback hell là gì</b><br />
 Trả lời:
 
 - Để xử lý các tác vụ bất động động ta có thể sử dụng callback. Nhưng khi lạm dụng quá nhiều callback lồng nhau sẽ sinh ra callback hell.<br />
-  <img  src='../image/callback-hell.png' width='300px' height='200px' style="text-align:center" />
+  <br /><img  src='../image/callback-hell.png' width='300px' height='200px' style="text-align:center" />
 - Callback hell gây ra sự khó chịu khi code và fix code.
 - Cách cải thiện:
   - Sử dụng promise của ES6.
@@ -67,13 +67,13 @@ Trả lời:
   - Let cho chúng ta cập nhập giá trị của biến chứ không cho phép tái khai báo lại biến đó. Tuy nhiên có thể khởi tại lại nó ở một block khác.
   - Let có tính hoisting tuy nhiên let không có giá trị khởi tạo nào do đó khi dùng biến let trước khi khởi tạo sẽ có lỗi là “ Reference Error ”.
   - Được dùng trong trường hợp biến đó có thể gán lại giá trị.<br />
-    <img  src='../image/let.png' width='300px' height='200px' style="text-align:center" />
+    <br /><img  src='../image/let.png' width='300px' height='200px' style="text-align:center" />
 - Const:
   - Tương tự như let, const có scope là block scoped và có tính hoisting nhưng không có giá trị khởi tạo.
   - Đối với các kiểu dữ liệu nguyên thủy (primitive), const không cho tái khai báo hoặc cập nhất giá trị mới cho biến đó.<br />
-    <img  src='../image/const-1.png' width='300px' height='200px' style="text-align:center" />
+    <br /><img  src='../image/const-1.png' width='300px' height='200px' style="text-align:center" />
 - Đối với kiểu dữ liệu reference (Object, array, function): Chúng ta cũng không thể cập nhật hoặc tái khai báo biến. Tuy nhiên chúng ta có thể cập nhật giá trị cho thuộc tính của biến đó.<br />
-  <img  src='../image/const-2.png' width='300px' height='200px' style="text-align:center" />
+  <br /><img  src='../image/const-2.png' width='300px' height='200px' style="text-align:center" />
 
 <b>Câu 6: Sự khác nhau giữa forEach, filter, map, every, some, reduce, for thường?</b><br />
 Trả lời:
@@ -126,15 +126,15 @@ Trả lời:
 Trả lời:
 
 - Sử dụng Spread:<br />
-  <img  src='../image/spread.png' width='300px' height='200px' style="text-align:center" />
+  <br /><img  src='../image/spread.png' width='300px' height='200px' style="text-align:center" />
 - Sử dụng Object.assign:<br />
-  <img  src='../image/assign.png' width='300px' height='200px' style="text-align:center" />
+  <br /><img  src='../image/assign.png' width='300px' height='200px' style="text-align:center" />
 - Sử dụng JSON: sử dụng 2 phương trước parse() và stringify(). Tuy nhiên không thể clone nếu object có function<br />
-  <img  src='../image/json.png' width='300px' height='200px' style="text-align:center" />
+  <br /><img  src='../image/json.png' width='300px' height='200px' style="text-align:center" />
 - Sử dụng thư viện - Lodash:<br />
-  <img  src='../image/lodash.png' width='300px' height='200px' style="text-align:center" />
+  <br /><img  src='../image/lodash.png' width='300px' height='200px' style="text-align:center" />
 - Sử dụng thử nghiệm structuredClone:<br />
-  <img  src='../image/clone-struc.png' width='300px' height='200px' style="text-align:center" />
+  <br /><img  src='../image/clone-struc.png' width='300px' height='200px' style="text-align:center" />
 
 <b>Câu 8: Phân biệt giá trị và địa chỉ của biến?</b><br />
 Trả lời:
@@ -170,11 +170,11 @@ Trả lời:
 
 - Sử dụng Object.keys():
   - Truyền object vào Object.keys => truy cập thuộc tính .length() => nếu bằng 0 thì object đó empty.
-    <img  src='../image/object_empty.png' width='300px' height='200px' style="text-align:center" />
+    <br /><img  src='../image/object_empty.png' width='300px' height='200px' style="text-align:center" />
 - Sử dụng for..in:
   - Dùng for…in để lặp các thuộc tính của đối tượng.
   - Nếu không có vòng lặp nào thì object đó rỗng.
-    <img  src='../image/forInEmpty.png' width='300px' height='200px' style="text-align:center" />
+    <br /><img  src='../image/forInEmpty.png' width='300px' height='200px' style="text-align:center" />
 
 <b>Câu 11: Các phương thức để nối 2 mảng?</b><br />
 Trả lời:
@@ -182,19 +182,19 @@ Trả lời:
 -	Sử dụng vòng lặp for và push:
     +	ta sẽ lặp tất cả các phần tử của một mảng.
     +	Trong vòng lặp ta lấy từng phần tử rồi push nó vào mảng còn lại.
-    <img  src='../image/noi_1.png' width='300px' height='200px' style="text-align:center" />
+    <br /><img  src='../image/noi_1.png' width='300px' height='200px' style="text-align:center" />
 -	Sử dụng spread:
     +	Ta tạo một mảng mới, rồi rải các phần tử của 2 mảng đã cho bằng spread vào mảng mới tạo.
-    <img  src='../image/noi_2.png' width='300px' height='200px' style="text-align:center" />
+    <br /><img  src='../image/noi_2.png' width='300px' height='200px' style="text-align:center" />
 -	Sử dụng phương thức concat():
     +	Gộp nhiều mảng lại với nhau thành một mảng khác mà vẫn giữ nguyên các mảng ban đầu.
-    <img  src='../image/noi_3.png' width='300px' height='200px' style="text-align:center" />
+    <br /><br /><img  src='../image/noi_3.png' width='300px' height='200px' style="text-align:center" />
 -	Sử dụng spread và push:
     +	Ta sử dụng tính năng thêm phần tử vào mảng của push và tính năng rải phần tử của spread để thực hiện nối mảng
-    <img  src='../image/noi_4.png' width='300px' height='200px' style="text-align:center" />
+    <br /><br /><img  src='../image/noi_4.png' width='300px' height='200px' style="text-align:center" />
 -	Sử dụng reduce và push:
     +	Cũng tương tự như dùng for và push.
-    <img  src='../image/noi_5.png' width='300px' height='200px' style="text-align:center" />
+    <br /><br /><img  src='../image/noi_5.png' width='300px' height='200px' style="text-align:center" />
 
 <b>Câu 12: Arrow function là gì? So sánh arrow func và express func.</b><br />
 Trả lời:
@@ -202,7 +202,7 @@ Trả lời:
 -	Arrow function là một tính năng của ES6. Giúp cú pháp trong ngắn gọn hơn.
 -	Sự khác nhau: 
     +	Dễ thấy nhất đó chính là cách viết của 2 loại function này là khác nhau.
-    <img  src='../image/arrown_1.png' width='300px' height='200px' style="text-align:center" />
+    <br /><img  src='../image/arrown_1.png' width='300px' height='200px' style="text-align:center" />
     +	Khác nhau về sử dụng "this"
         - Với function thông thường, có thể dùng bind để để làm con trỏ this trỏ tới object cần gọi.
         -	Còn arrow function thì không có bind nên không định nghĩa lại this. vậy nên this sẽ tương ứng với context gần nó nhất.
@@ -225,15 +225,15 @@ Trả lời:
         -	Cả 2 phương thức này trông rất giống nhau, tuy nhiên sự khác biệt nằm ở arguments truyền vào chúng.
         -	Call cho phép truyền từng arguments một (one by one).
         -	apply thì cho phép truyền vào một mảng.
-    <img  src='../image/bind_1.png' width='300px' height='200px' style="text-align:center" /><br />
+    <br /><br /><img  src='../image/bind_1.png' width='300px' height='200px' style="text-align:center" /><br />
     +	bind: cho phép chúng ta đặt this một lần, và chúng ta có thể hàm đã được bind ở bất kỳ đâu khi muốn sử dụng.
-    <img  src='../image/bind_2.png' width='300px' height='200px' style="text-align:center" />
+   <br /><br /><img  src='../image/bind_2.png' width='300px' height='200px' style="text-align:center" />
 
 <b>Câu 15: Nodejs là single thread hay multiple thread?</b><br />
 Trả lời:
 
 -	Vì nodejs sử dụng ngôn ngữ javascript để thực hiện coding và sử dụng v8  nên nodejs là single thread.
--	Tuy nhiên, Nodejs đã update có thể sử dụng multiple thread với worker_thread.
+-	Tuy nhiên, Nodejs đã update có thể sử dụng multiple thread với worker_thread.<br />
 ⇒ Nodejs vừa là đơn luồng cũng vừa là đa luồng.
 
 
