@@ -1,6 +1,6 @@
 Tên: Nguyễn Thành Thiện
 
-<b>Câu 1: Phân biệt settimeout và setinterval?</b>
+<b>Câu 1: Phân biệt settimeout và setinterval?</b><br />
 Trả lời:
 
 - Giống nhau:
@@ -15,7 +15,7 @@ Trả lời:
 | Công dụng | Công dụng Thực hiện một công việc (function) một lần sau một khoảng thời gian (timeout). Thực hiện một công việc (function) lặp đi lặp lại, sau một khoảng thời gian (interval) và lặp lại liên tục công việc đó trong khoảng thời gian đó. | Công dụng Thực hiện một công việc (function) một lần sau một khoảng thời gian (timeout). Thực hiện một công việc (function) lặp đi lặp lại, sau một khoảng thời gian (interval) và lặp lại liên tục công việc đó trong khoảng thời gian đó. |
 | Dừng hàm  | let timerId = setTimeout(...);<br />clearTimeout( timerId );                                                                                                                                                                                | let timerId = setInterval(...);<br />clearInterval( timerId );                                                                                                                                                                              |
 
-<b>Câu 2: Phân biệt callback, promise, async await</b>
+<b>Câu 2: Phân biệt callback, promise, async await</b><br />
 Trả lời:
 
 - Giống nhau:
@@ -44,7 +44,8 @@ Trả lời:
         - Await được dừng để báo muốn đợi kết quả của công việc bất động bộ. Await phải được dừng trong hàm có đánh dấu từ khóa async.
         - Sử dụng try/catch để bắt lỗi xảy ra trong async/await.<br />
     <img  src='../image/async_await.png' width='300px' height='200px' style="text-align:center" />
-<b>Câu 3: Callback hell là gì</b>
+
+<b>Câu 3: Callback hell là gì</b><br />
 Trả lời:
 
 - Để xử lý các tác vụ bất động động ta có thể sử dụng callback. Nhưng khi lạm dụng quá nhiều callback lồng nhau sẽ sinh ra callback hell.<br />
@@ -55,3 +56,20 @@ Trả lời:
     - Sử dụng Async/Await.
     - Chia chức năng thành chức năng nhỏ hơn.
     - Viết comment cho mỗi callback.
+
+<b>Câu 4: Promise hell là gì</b><br />
+Trả lời:
+
+-	Tương tự như callback hell, Promise hell xảy ra khi  ta lạm dụng promise một cách không hiểu.
+-	Các promise lồng nhau, promise sau sẽ phụ thuộc vào promise trước sẽ sinh ra hell.
+
+<b>Câu 5: Phân biệt let và const? trường hợp object thì như thế nào?</b><br />
+Trả lời:
+
+-	Let:
+    +	Let có có scope là block scoped. Các biến có scope là block scoped nếu ra khởi scope được khai báo thì sẽ không thể sử dụng được nữa.
+    +	Let cho chúng ta cập nhập giá trị của biến chứ không cho phép tái khai báo lại biến đó. Tuy nhiên có thể khởi tại lại nó ở một block khác.
+    +	Let có tính hoisting tuy nhiên let không có giá trị khởi tạo nào do đó khi dùng biến let trước khi khởi tạo sẽ có lỗi là “ Reference Error ”.
+    +	Được dùng trong trường hợp biến đó có thể gán lại giá trị.<br />
+    <img  src='../image/let.png' width='300px' height='200px' style="text-align:center" />
+
