@@ -195,3 +195,45 @@ Trả lời:
 -	Sử dụng reduce và push:
     +	Cũng tương tự như dùng for và push.
     <img  src='../image/noi_5.png' width='300px' height='200px' style="text-align:center" />
+
+<b>Câu 12: Arrow function là gì? So sánh arrow func và express func.</b><br />
+Trả lời:
+
+-	Arrow function là một tính năng của ES6. Giúp cú pháp trong ngắn gọn hơn.
+-	Sự khác nhau: 
+    +	Dễ thấy nhất đó chính là cách viết của 2 loại function này là khác nhau.
+    <img  src='../image/arrown_1.png' width='300px' height='200px' style="text-align:center" />
+    +	Khác nhau về sử dụng "this"
+        - Với function thông thường, có thể dùng bind để để làm con trỏ this trỏ tới object cần gọi.
+        -	Còn arrow function thì không có bind nên không định nghĩa lại this. vậy nên this sẽ tương ứng với context gần nó nhất.
+        -	Vì không có this nên arrow function không phù hợp để làm method của object.
+
+<b>Câu 13: spread operator dùng để làm gì?</b><br />
+Trả lời:
+
+-	Rải các phần tử của một object (array, map, set).
+-	Để nối mảng, copy mảng
+-	Dùng để rải các ký tự thành các ký tự riêng lẻ.
+-	Copy object, gộp object.
+
+<b>Câu 14: Con trỏ this là gì? Phân biệt call, bind, apply?</b><br />
+Trả lời:
+
+-	This là một đại diện cho context, object hoặc chủ thể của code đang chạy.
+-	Phân biệt:
+    +	Call, apply: 
+        -	Cả 2 phương thức này trông rất giống nhau, tuy nhiên sự khác biệt nằm ở arguments truyền vào chúng.
+        -	Call cho phép truyền từng arguments một (one by one).
+        -	apply thì cho phép truyền vào một mảng.
+    <img  src='../image/bind_1.png' width='300px' height='200px' style="text-align:center" />
+    +	bind: cho phép chúng ta đặt this một lần, và chúng ta có thể hàm đã được bind ở bất kỳ đâu khi muốn sử dụng.
+    <img  src='../image/bind_2.png' width='300px' height='200px' style="text-align:center" />
+
+<b>Câu 15: Nodejs là single thread hay multiple thread?</b><br />
+Trả lời:
+
+-	Vì nodejs sử dụng ngôn ngữ javascript để thực hiện coding và sử dụng v8  nên nodejs là single thread.
+-	Tuy nhiên, Nodejs đã update có thể sử dụng multiple thread với worker_thread.
+⇒ Nodejs vừa là đơn luồng cũng vừa là đa luồng.
+
+
