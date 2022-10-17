@@ -139,3 +139,32 @@ Trả lời:
     <img  src='../image/lodash.png' width='300px' height='200px' style="text-align:center" />
 -	Sử dụng thử nghiệm structuredClone:<br />
     <img  src='../image/clone-struc.png' width='300px' height='200px' style="text-align:center" />
+
+<b>Câu 8: Phân biệt giá trị và địa chỉ của biến?</b><br />
+Trả lời:
+
+-	Khi ta khai báo biến, biến sẽ được lưu trong ram, nơi lưu trữ đó có địa chỉ của biến đó, và địa chỉ của biến sẽ lưu thông tin của biến.
+-	Đối với kiểu dữ liệu nguyên thủy, khi ta chỉnh sửa thông tin ở biến đó ta sẽ truy cập tới địa chỉ là số thông tin ban đầu và cập nhật lại  giá trị mới.
+-	Đối với kiểu dữ liệu tham chiếu, khi tạo biến, địa chỉ của biến đó chỉ sẽ có giá trị là undefined, khi biến được gán giá trị, giá trị đó sẽ được lưu ở một địa chỉ khác và biến sẽ lưu lại địa chỉ của giá trị.
+
+<b>Câu 9: Javascript có bao nhiêu kiểu dữ liệu?</b><br />
+Trả lời:
+
+- Js có 8 kiểu 
+    + 7 kiểu dữ liệu nguyên thủy: 
+        . boolean : chỉ gồm 2 giá trị true và false.
+        . null: là kiểu dữ liệu đặt biệt, có ý nghĩa là không biết giá trị hoặc không có giá trị. chỉ có một giá trị duy nhất là null.
+        . undefined: là kiểu dữ liệu đặc biệt, có ý nghĩa là giá trị biến chưa được gán. Chỉ một giá trị là undefined.
+        . number: 
+            . giá trị nằm trong khoảng -(2^53-1) đến 2^53-1
+            . Có thể viết 2 loại số: số nguyên và số thực.
+            . Có 3 loại số đặc biệt:
+	            . Infinity (số dương vô cùng).
+                . Infinity (số âm vô cùng).
+        . NaN : Not a Number
+    . BigInt: sử dụng để lưu các số cực kì lớn vượt quá phạm vi của kiểu number.
+    . String: để biểu diễn chữ, văn bản, đoạn văn,...
+    . Sử dụng “”, ‘’, ``: để biểu diễn kiểu string.
+    . symbol: dùng để tạo ra giá trị duy nhất và bất biến
+- 1 kiểu dữ liệu tham chiếu:
+    + Object: là tập các key-value. trong đó, key thuộc kiểu dữ liệu string hoặc symbol, value thuộc bất kỳ kiểu nào.
