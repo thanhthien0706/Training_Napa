@@ -24,5 +24,5 @@ Trả lời:
         .	Là một hàm được truyền dưới dạng tham số vào hàm khác, và được gọi trong hàm đó.
         .	Cách dùng:
 <p align="center">
-    <img  src='../image/callback.png' width='200px' height='200px' style="text-align:center" />
+    <img  src='../image/callback.png' width='300px' height='200px' style="text-align:center" />
 </p>
