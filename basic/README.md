@@ -13,3 +13,6 @@ Trả lời:
 | :-- | :--------- | :---------- |
 | Cú pháp | setTimeout( function , timeout) | setTimeout( function , timeout) |
 | Công dụng | Công dụng Thực hiện một công việc (function) một lần sau một khoảng thời gian (timeout). Thực hiện một công việc (function) lặp đi lặp lại, sau một khoảng thời gian (interval) và lặp lại liên tục công việc đó trong khoảng thời gian đó. | Công dụng Thực hiện một công việc (function) một lần sau một khoảng thời gian (timeout). Thực hiện một công việc (function) lặp đi lặp lại, sau một khoảng thời gian (interval) và lặp lại liên tục công việc đó trong khoảng thời gian đó. |
+| Dừng hàm | let timerId = setTimeout(...);
+clearTimeout( timerId ); | let timerId = setInterval(...);
+clearInterval( timerId ); |
