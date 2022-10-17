@@ -1,6 +1,6 @@
 Tên: Nguyễn Thành Thiện
 
-Câu 1: Phân biệt settimeout và setinterval?
+<b>Câu 1: Phân biệt settimeout và setinterval?</b>
 Trả lời:
 
 - Giống nhau:
