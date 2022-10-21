@@ -1,3 +1,12 @@
+/**
+ * Có 20 sự kiện bất đồng bộ không biết trước thời gian hoàn thành, tại mỗi
+ * thời điểm chỉ được thực hiện không quá 5 sự kiện bất đồng bộ
+ *
+ * Hãy implement sao cho thời gian thực thi thành công 20 sự kiện bất đồng bộ trên là nhanh nhất
+ * (tận dụng tối đa thời gian chờ của CPU, không nên chọn giải pháp chia thành 4 cụm và chạy tuần tự
+ * từng cụm)
+ */
+
 const fs = require("fs/promises");
 const path = require("path");
 const filePath = path.join(__dirname, "../file_reading.txt");
@@ -25,33 +34,34 @@ const event20 = fs.readFile(filePath, { encoding: "utf8" });
 
 async function handleReadingFile() {
   try {
-    const handle1 = await Promise.all([event1, event2, event3, event4, event5]);
-    const handle2 = await Promise.all([
-      event6,
-      event7,
-      event8,
-      event9,
-      event10,
-    ]);
-    const handle3 = await Promise.all([
-      event11,
-      event12,
-      event13,
-      event14,
-      event15,
-    ]);
-    const handle4 = await Promise.all([
-      event16,
-      event17,
-      event18,
-      event19,
-      event20,
-    ]);
+    console.log(await event1);
+    // const handle1 = await Promise.all([event1, event2, event3, event4, event5]);
+    // const handle2 = await Promise.all([
+    //   event6,
+    //   event7,
+    //   event8,
+    //   event9,
+    //   event10,
+    // ]);
+    // const handle3 = await Promise.all([
+    //   event11,
+    //   event12,
+    //   event13,
+    //   event14,
+    //   event15,
+    // ]);
+    // const handle4 = await Promise.all([
+    //   event16,
+    //   event17,
+    //   event18,
+    //   event19,
+    //   event20,
+    // ]);
 
-    console.log(handle1);
-    console.log(handle2);
-    console.log(handle3);
-    console.log(handle4);
+    // console.log(handle1);
+    // console.log(handle2);
+    // console.log(handle3);
+    // console.log(handle4);
   } catch (error) {
     console.log(error.message);
   }
