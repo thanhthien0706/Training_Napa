@@ -5,7 +5,9 @@ setTimeout(() => {
 function bai_1() {
   let current_time = new Date().getTime();
   let current_time_5 = current_time + 5000;
-  for (let i = current_time; i < current_time_5; i = new Date().getTime()) {}
+  for (let i = current_time; i < current_time_5; i = new Date().getTime()) {
+    console.log("cho cho ");
+  }
 }
 
 bai_1();
