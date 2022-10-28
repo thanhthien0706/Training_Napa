@@ -1,0 +1,30 @@
+version: '3'
+
+# VOLUMES
+volumes:
+  dir-node-mongo:
+    driver: local
+    driver_opts:
+      type: none
+      device: D:\Cong_Viec\NapaGlobal\Training_Napa\dockerNodeMongo\data
+      o: bind
+
+services:
+  # NODE_EXPRESS
+  my-node:
+    container_name: node-napa
+    build: .
+    restart: always
+    links:
+      - my-mongo
+    ports:
+      - "9999:8181"
+  # MONGO
+  my-mongo:
+    container_name: mongo-napa
+    image: "mongo:latest"
+    restart: always
+    volumes:
+      - dir-node-mongo:/data/db
+    ports:
+      - "27017:27017"
