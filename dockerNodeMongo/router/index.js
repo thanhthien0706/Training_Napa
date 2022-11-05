@@ -6,7 +6,7 @@ const UserRoute = require("./api/UserRoute");
 router.use("/user", UserRoute);
 router.use("/", (req, res) => {
   res.json({
-    mess: "Wellcome to api of thien",
+    mess: "Wellcome to api Thanh Thien",
   });
 });
 
