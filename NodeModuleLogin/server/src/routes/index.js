@@ -1,9 +1,24 @@
-var express = require('express');
-var router = express.Router();
+const AuthenRouter = require("./AuthenRouter");
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+const routes = (app) => {
+  app.use("/auth", AuthenRouter);
+  // app.use("/", (req, res) => {
+  //   res.json({
+  //     mess: "Chao ban",
+  //   });
+  // });
 
-module.exports = router;
+  app.use(function (req, res, next) {
+    next(createError(404));
+  });
+
+  app.use(function (err, req, res, next) {
+    res.locals.message = err.message;
+    res.locals.error = req.app.get("env") === "development" ? err : {};
+
+    res.status(err.status || 500);
+    res.render("error");
+  });
+};
+
+module.exports = routes;

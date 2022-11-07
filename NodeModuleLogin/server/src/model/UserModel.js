@@ -1,0 +1,38 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+const bcrypt = require("bcrypt-nodejs");
+
+const statusActive = {
+  ACTIVE: 1,
+  INACTIVE: 0,
+};
+
+const UserSchema = new Schema(
+  {
+    local: {
+      email: { type: String },
+      password: { type: String },
+      role: {
+        type: mongoose.Types.ObjectId,
+        ref: "Role",
+      },
+      activity: { type: Number },
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
+
+UserSchema.methods.generateHash = function (password) {
+  return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
+};
+
+UserSchema.methods.validPassword = function (password) {
+  return bcrypt.compareSync(password, this.local.password);
+};
+
+module.exports = {
+  UserModel: mongoose.model("User", UserSchema),
+  StatusActive: statusActive,
+};
