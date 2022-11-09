@@ -16,7 +16,12 @@ const UserSchema = new Schema(
       email: { type: String },
       password: { type: String },
     },
-
+    github: {
+      id: { type: String },
+      token: { type: String },
+      displayName: { type: String },
+      username: { type: String },
+    },
     role: {
       type: mongoose.Types.ObjectId,
       ref: "Role",

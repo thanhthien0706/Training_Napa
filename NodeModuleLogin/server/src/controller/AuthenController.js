@@ -67,6 +67,56 @@ class AuthenController {
     })(req, res, next);
   }
 
+  // [GET] /auth/github
+  signInGithub(req, res, next) {
+    passport.authenticate("github", { scope: ["user:email"] })(req, res, next);
+  }
+
+  // [GET] /auth/github/callback
+  async signInGithubCallback(req, res, next) {
+    passport.authenticate("github", async (err, user) => {
+      try {
+        if (err) {
+          return res
+            .status(500)
+            .json(new ResponseJson(false, "Error signin", null));
+        }
+
+        if (!user) {
+          return res
+            .status(404)
+            .json(new ResponseJson(false, "User not found", null));
+        }
+
+        let status, statusCheck, message;
+        const token = await generateToken(
+          {
+            id: user._id,
+          },
+          {
+            expiresIn: "30 days",
+          }
+        );
+
+        if (token) {
+          status = 200;
+          statusCheck = true;
+          message = "Signin and Token generated successfully";
+        } else {
+          status = 500;
+          statusCheck = false;
+          message = "Signin successfully and Token generated failed";
+        }
+
+        return res.status(status).json(
+          new ResponseJson(statusCheck, message, {
+            token,
+          })
+        );
+      } catch (error) {}
+    })(req, res, next);
+  }
+
   // [PUT] /auth/changePassword
   async changePassword(req, res) {
     try {

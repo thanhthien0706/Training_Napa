@@ -8,6 +8,7 @@ router.post("/signin", AuthenController.signin);
 router.post("/forgotPassword", AuthenController.forgotPassword);
 router.post("/changePassword", AuthenController.changePassword);
 router.get("/reset-password", AuthenController.resetPassword);
-router.get("/github/callback");
+router.get("/github", AuthenController.signInGithub);
+router.get("/github/callback", AuthenController.signInGithubCallback);
 
 module.exports = router;

@@ -6,7 +6,7 @@ class ServerGlobal {
 
   constructor() {
     mongoose
-      .connect(process.env.DB_ENDPOINT, {
+      .connect(process.env.MONGO_ENDPOINT, {
         useNewUrlParser: true,
       })
       .then(() => {
