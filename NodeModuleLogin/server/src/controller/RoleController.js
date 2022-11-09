@@ -37,6 +37,14 @@ class RoleController {
       console.log(`Error : ${error.message}`);
     }
   }
+
+  async findOneByField(field) {
+    try {
+      return await RoleModel.findOne(field);
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
 }
 
 module.exports = new RoleController();

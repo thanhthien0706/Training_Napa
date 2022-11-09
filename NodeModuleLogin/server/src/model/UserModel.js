@@ -9,15 +9,19 @@ const statusActive = {
 
 const UserSchema = new Schema(
   {
+    username: {
+      type: String,
+    },
     local: {
       email: { type: String },
       password: { type: String },
-      role: {
-        type: mongoose.Types.ObjectId,
-        ref: "Role",
-      },
-      activity: { type: Number },
     },
+
+    role: {
+      type: mongoose.Types.ObjectId,
+      ref: "Role",
+    },
+    activity: { type: Boolean },
   },
   {
     timestamps: true,
@@ -33,6 +37,6 @@ UserSchema.methods.validPassword = function (password) {
 };
 
 module.exports = {
-  UserModel: mongoose.model("User", UserSchema),
+  UserModel: mongoose.model("Users", UserSchema),
   StatusActive: statusActive,
 };

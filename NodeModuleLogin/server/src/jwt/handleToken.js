@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const { privateKey, publicKey } = require("../utils/keyJwt");
+const { privateKey, publicKey } = require("./keyJwt");
 
 class HandleJwt {
   getToken(headers) {
