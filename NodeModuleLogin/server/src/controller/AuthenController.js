@@ -40,14 +40,12 @@ class AuthenController {
       }
 
       let status, statusCheck, message;
-      const token = await generateToken(
-        {
-          id: user._id,
-        },
-        {
-          expiresIn: "30 days",
-        }
-      );
+      const token = await ({
+        id: user._id,
+      },
+      {
+        expiresIn: "30 days",
+      });
 
       if (token) {
         status = 200;
