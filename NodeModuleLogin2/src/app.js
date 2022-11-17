@@ -1,20 +1,17 @@
-const express = require("express");
-
+const expressLoader = require("./loader/express");
 const loader = require("./loader");
 
+const port = process.env.PORT || 3000;
+
 async function startServer() {
-  const app = express();
-  const port = process.env.PORT || 3000;
-
-  await loader(app, express);
-
+  await loader();
+  const app = expressLoader();
   app.listen(port, (err) => {
     if (err) {
       console.log(err);
-      return;
     }
     console.log("listening on port " + port);
   });
 }
 
-startServer();
+module.exports = startServer();

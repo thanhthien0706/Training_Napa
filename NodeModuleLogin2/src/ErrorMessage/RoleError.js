@@ -12,4 +12,9 @@ module.exports = {
     status: 404,
     message: "Role Not Found",
   },
+
+  notCreateRole: {
+    status: 201,
+    message: "Not Create Role",
+  },
 };

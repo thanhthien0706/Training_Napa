@@ -27,7 +27,7 @@ class CheckAccount {
     return async (req, res, next) => {
       try {
         const token = getToken(req.headers);
-        if (token === null) {
+        if (token == null) {
           throw new Error("expiredTokens");
         }
         let dataToken = await verifyToken(token);

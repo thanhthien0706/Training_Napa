@@ -6,11 +6,12 @@ class AuthController {
   // [POST] /auth/signup
   async signup(req, res, next) {
     try {
-      const dataUser = await AuthtService.signup(req.body);
+      const dataUser = await AuthService.signup(req.body);
       return res
         .status(200)
         .json(new ResponseBasicDTO(true, "Create user successfully", dataUser));
     } catch (error) {
+      console.log(error);
       next({
         status: AuthError[error.message].status,
         message: AuthError[error.message].message,

@@ -34,6 +34,7 @@ class RoleController {
             }
           })
           .catch((error) => {
+            console.log(error);
             next({
               status: RoleError[error.message].status,
               message: RoleError[error.message].message,
@@ -41,6 +42,7 @@ class RoleController {
           });
       });
     } catch (error) {
+      console.log(error);
       next({
         status: RoleError[error.message].status,
         message: RoleError[error.message].message,
